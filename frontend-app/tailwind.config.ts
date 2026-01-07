@@ -1,0 +1,87 @@
+import type { Config } from "tailwindcss";
+
+const config: Config = {
+    content: [
+        "./src/pages/**/*.{js,ts,jsx,tsx,mdx}",
+        "./src/components/**/*.{js,ts,jsx,tsx,mdx}",
+        "./src/app/**/*.{js,ts,jsx,tsx,mdx}",
+    ],
+    theme: {
+        extend: {
+            colors: {
+                olive: {
+                    50: '#fbf9ea',
+                    100: '#f6f3d5',
+                    200: '#eee7aa',
+                    300: '#e5db80',
+                    400: '#dccf56',
+                    500: '#d4c32b',
+                    600: '#a99c23',
+                    700: '#7f751a',
+                    800: '#554e11',
+                    900: '#2a2709',
+                    950: '#1e1b06',
+                },
+                'muted-olive': {
+                    50: '#f3f6ee',
+                    100: '#e7eedd',
+                    200: '#cfddbb',
+                    300: '#b7cc99',
+                    400: '#9fbb77',
+                    500: '#87aa55',
+                    600: '#6c8844',
+                    700: '#516633',
+                    800: '#364422',
+                    900: '#1b2211',
+                    950: '#13180c',
+                },
+                'sage-green': {
+                    50: '#f2f6ef',
+                    100: '#e5ecdf',
+                    200: '#cbd9bf',
+                    300: '#b1c69f',
+                    400: '#96b47e',
+                    500: '#7ca15e',
+                    600: '#63814b',
+                    700: '#4b6039',
+                    800: '#324026',
+                    900: '#192013',
+                    950: '#11160d',
+                },
+                'olive-leaf': {
+                    50: '#f3f8ed',
+                    100: '#e6f0db',
+                    200: '#cde2b6',
+                    300: '#b5d392',
+                    400: '#9cc56d',
+                    500: '#83b649',
+                    600: '#69923a',
+                    700: '#4f6d2c',
+                    800: '#34491d',
+                    900: '#1a240f',
+                    950: '#121a0a',
+                },
+                'evergreen': {
+                    50: '#eff6ee',
+                    100: '#dfedde',
+                    200: '#bfdcbc',
+                    300: '#a0ca9b',
+                    400: '#80b979',
+                    500: '#60a758',
+                    600: '#4d8646',
+                    700: '#3a6435',
+                    800: '#264323',
+                    900: '#132112',
+                    950: '#0d170c',
+                },
+            },
+            backgroundImage: {
+                "gradient-radial": "radial-gradient(var(--tw-gradient-stops))",
+                "gradient-conic":
+                    "conic-gradient(from 180deg at 50% 50%, var(--tw-gradient-stops))",
+            },
+        },
+    },
+    plugins: [],
+};
+export default config;
