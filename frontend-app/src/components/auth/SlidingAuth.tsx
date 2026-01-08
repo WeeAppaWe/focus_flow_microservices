@@ -153,7 +153,6 @@ export default function SlidingAuth() {
                         </motion.div>
 
                         <motion.div initial="hidden" animate={!isSignUp ? "visible" : "hidden"} custom={4} variants={contentVariants} className="w-full mt-2 flex flex-col items-center">
-                            <a href="#" className="text-sage-green-600 text-xs hover:text-evergreen-700 transition-colors self-end">Forgot your password?</a>
                             <Button className="w-full mt-4 rounded-xl bg-evergreen-600 hover:bg-evergreen-700 text-white font-bold py-6 shadow-lg shadow-evergreen-500/30 transition-all hover:scale-[1.02]" disabled={loginLoading}>
                                 {loginLoading ? 'Signing In...' : 'Sign In'}
                             </Button>
